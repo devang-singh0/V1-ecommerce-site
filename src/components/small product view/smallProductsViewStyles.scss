@@ -1,0 +1,85 @@
+
+#link{
+    text-decoration: none;
+    color: black;
+}
+#productSmallDiv {
+    width: 227px;
+    height: 295px;
+    border: 1px solid #ededed;
+    border-radius: 15px;
+    position: relative;
+    color: #222;
+    cursor: pointer;
+}
+
+#productSmallDiv:hover {
+    border: 1px solid var(--primary, #008ECC);
+    background: var(--backgorund-1, #F5F5F5);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 6px 13px 0px rgba(0, 0, 0, 0.05), 0px 24px 24px 0px rgba(0, 0, 0, 0.04), 0px 54px 33px 0px rgba(0, 0, 0, 0.03), 0px 97px 39px 0px rgba(0, 0, 0, 0.01), 0px 151px 42px 0px rgba(0, 0, 0, 0.00);
+    transform: scale(1.02);
+    img{
+        transform: translateY(-5px);
+    }
+}
+
+#productSmallDiv div {
+    padding: 15px 71px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 15px 0 0;
+}
+
+#productSmallDiv img {
+    height: 160px;
+}
+
+#productSmallDiv p {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    height: 50px;
+    width: 50px;
+    font-size: 14px;
+    color: white;
+    background-color: #008ecc;
+    border-radius: 0 15px 0 15px;
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+
+#productSmallDiv h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0 0 10px;
+}
+
+#productSmallDiv h4 span:nth-child(1) {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 10px 0 10px;
+}
+
+#productSmallDiv h4 span:nth-child(2) {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+#productSmallDiv hr {
+    width: 200px;
+    border-top: 1px solid #ededed;
+    margin: 10px auto;
+}
+
+#productSmallDiv h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #249b3e;
+}

@@ -1,0 +1,36 @@
+#categories {
+    height: 40px;
+    list-style: none;
+    border-bottom: 1px solid #ededed;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 0 90px;
+    .active {
+        background-color: #008ecc;
+        color: #fff;
+    }
+    li {
+        display: inline;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 10px;
+        font-size: 12px;
+        background-color: #f3f9fb;
+        color: #222;
+        padding: 6px 10.5px;
+        border-radius: 16px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        &:hover {
+            border: 1px solid #008ecc;
+
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    #categories{
+        padding: 0 30px;
+    }
+}

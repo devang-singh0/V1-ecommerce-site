@@ -1,0 +1,250 @@
+#imageSlider {
+    width: var(--sliderWidth);
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+
+    section {
+        overflow: hidden;
+        width: 1000px;
+        height: 300px;
+        border-radius: 16px;
+    }
+
+    section>div {
+        display: flex;
+    }
+
+    #moveLeft,
+    #moveRight {
+        position: absolute;
+        top: 50%;
+        left: -5px;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        background-color: #f3f9fb;
+        border-radius: 50%;
+        border: 10px solid white;
+        cursor: pointer;
+    }
+
+    #moveRight {
+        right: -5px;
+        transform: translate(50%, -50%);
+        left: auto !important;
+    }
+
+    #circles {
+        position: absolute;
+        bottom: 60px;
+        left: 70px;
+        display: flex;
+        gap: 7px;
+        z-index: 2;
+
+        span {
+            height: 10px;
+            width: 10px;
+            border-radius: 5px;
+            background-color: white;
+            display: block;
+        }
+
+        .active {
+            width: 25px;
+        }
+    }
+}
+
+
+// small image styles
+.scrollImages {
+    min-width: var(--sliderWidth);
+    height: 300px;
+    border-radius: 16px;
+    background: var(--color1);
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+
+    // background: #beb4a0;
+    div:nth-child(1) {
+        width: 60%;
+        padding: 30px 0 0 65px;
+    }
+
+    &:hover {
+        div:nth-child(2) img {
+            transform: translateY(-10px);
+        }
+    }
+
+    div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        position: relative;
+    }
+
+    div:nth-child(2)::before {
+        position: absolute;
+        content: '';
+        height: 400px;
+        width: 400px;
+        background-color: var(--color2);
+        border-radius: 50%;
+        top: -250px;
+        left: 50px;
+        outline: 4px solid var(--color2);
+        outline-offset: 10px;
+        z-index: 0;
+    }
+
+    div:nth-child(2)::after {
+        position: absolute;
+        content: '';
+        height: 400px;
+        width: 400px;
+        background-color: var(--color2);
+        border-radius: 50%;
+        bottom: -300px;
+        right: 50px;
+        outline: 4px solid var(--color2);
+        outline-offset: 10px;
+        z-index: 1;
+    }
+
+    div:nth-child(2) img {
+        height: 250px;
+        z-index: 2;
+    }
+
+    div>p {
+        color: #fff;
+        font-size: 25px;
+        font-style: normal;
+        line-height: 30px;
+    }
+
+    div>h3 {
+        font-size: 50px;
+        color: white;
+        margin: 5px 0;
+    }
+
+    div>h2 {
+        color: white;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    #imageSlider {
+        section {
+            height: 250px;
+        }
+
+        #circles {
+            bottom: 30px;
+            left: 40px;
+        }
+    }
+
+    .scrollImages {
+        height: 250px;
+
+        div:nth-child(2) img {
+            height: 200px;
+        }
+
+        div:nth-child(1) {
+            width: 60%;
+            padding: 30px 0 0 40px;
+        }
+
+        div>p {
+            font-size: 18px;
+        }
+
+        div>h3 {
+            font-size: 40px;
+        }
+
+        div>h2 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #imageSlider {
+        section {
+            height: 200px;
+        }
+
+        #circles {
+            bottom: 20px;
+            left: 30px;
+        }
+
+        #moveLeft,
+        #moveRight {
+            height: 40px;
+            width: 40px;
+            border: 5px solid white;
+        }
+    }
+
+    .scrollImages {
+        height: 200px;
+
+        div:nth-child(2) img {
+            height: 150px;
+            z-index: 2;
+        }
+
+        div:nth-child(1) {
+            width: 60%;
+            padding: 20px 0 0 30px;
+        }
+
+        div>p {
+            font-size: 10px;
+            line-height: 15px;
+        }
+
+        div>h3 {
+            font-size: 25px;
+            margin: 5px 0;
+        }
+
+        div>h2 {
+            font-size: 20px;
+        }
+
+        div:nth-child(2)::before {
+            height: 150px;
+            width: 150px;
+            top: -50px;
+            left: 10px;
+            outline: 2px solid var(--color2);
+            outline-offset: 5px;
+        }
+
+        div:nth-child(2)::after {
+            height: 150px;
+            width: 150px;
+            top: 150px;
+            right: 60px;
+            outline: 2px solid var(--color2);
+            outline-offset: 5px;
+        }
+
+    }
+}

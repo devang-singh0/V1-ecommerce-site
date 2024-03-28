@@ -1,0 +1,7 @@
+search
+add to cart option on products
+add to fav option on products
+cart
+favourite
+
+responsiveness

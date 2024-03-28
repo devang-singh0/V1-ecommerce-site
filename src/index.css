@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600&family=Noto+Sans&family=Open+Sans:wght@500&family=PT+Sans&family=Poppins:wght@500&family=Roboto:ital@0;1&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Hanken Grotesk', sans-serif;
+  transition: 0.5s;
+}
