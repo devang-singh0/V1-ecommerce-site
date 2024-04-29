@@ -39,3 +39,9 @@ The previous version of MegaMart is available in this repository.
   - Node.js
   - Express
   - MongoDB (New Version)
+ 
+
+
+## Author
+
+This project is maintained by [Devang Singh](https://github.com/devang-singh0).
