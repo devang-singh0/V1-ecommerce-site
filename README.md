@@ -1,4 +1,4 @@
-![Uploading Screenshot 2024-04-27 131923.png…]()
+![Screenshot 2024-04-27 131923](https://github.com/devang-singh0/V1-ecommerce-site/assets/100257042/8193cd12-ee52-42d2-a390-34aff788900a)![Screenshot 2024-04-27 131923](https://github.com/devang-singh0/V1-ecommerce-site/assets/100257042/cb1663ee-3794-4110-9d12-a9474eb0136b)
 
 ## 🔗 Important Links
 [![LIVE AT](https://img.shields.io/badge/LIVE_AT-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://megamart-1.vercel.app/)
